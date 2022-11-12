@@ -1,0 +1,45 @@
+@import './setting/const.scss';
+@import './setting/reset.scss';
+@import './component/header.scss';
+@import './component/post.scss';
+@import './component/posts.scss';
+@import './component/sidePost.scss';
+@import './component/monthlyArchive.scss';
+@import './component/footer.scss';
+@import './component/overlay.scss';
+
+body{
+    background: $background;
+    
+}
+
+.page{
+    position:relative;
+    width: 100%;
+    min-height:calc(100vh - 50px);
+    
+}
+
+.container{
+    position: relative;
+    width: calc(max(360px, min(100%, 820px)));
+    left: calc(50% - max(360px, min(100%, 820px))/2);
+    height: 100%;
+    /* font-size:0;to destroy space when child display:inline and parent is display:block */
+}
+
+.border{
+    border-bottom: 4px solid;
+    border-color:$white-gray;
+    margin: 0 30px;
+}
+
+
+
+
+
+
+
+
+
+

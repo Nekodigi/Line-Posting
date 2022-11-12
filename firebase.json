@@ -1,0 +1,34 @@
+{
+  "hosting": {
+    "public": "functions/public",
+    "redirects":[ {
+      "source": "/",
+      "destination": "/contents",
+      "type": 301
+    }],
+    "rewrites": [{
+      "source": "/contents",
+      "function": "app"
+    },{
+      "source": "/contents/*",
+      "function": "app"
+    },{
+      "source": "/approve/*",
+      "function": "app"
+    },{
+      "source": "/deny/*",
+      "function": "app"
+    },{
+      "source": "/preview/*",
+      "function": "app"
+    },{
+      "source": "/webhook",
+      "function": "app"
+    }],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

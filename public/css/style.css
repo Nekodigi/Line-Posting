@@ -1,0 +1,381 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+header{
+    width:100%;
+    height:50px;
+    background: #06C755;
+}
+
+body{
+    background: #F9F3ED;
+}
+
+.page{
+    position:relative;
+    width: 100%;
+    min-height:calc(100vh - 50px);
+    
+}
+
+.paper{
+    margin:30px;
+    padding:30px 40px;
+    background:#ffffff;
+}
+
+.inner_paper{
+    overflow: hidden;
+}
+
+.heading{
+    border-bottom: 2px solid #E6E6E6;
+    margin-bottom: 30px;
+}
+
+.title{
+    height: 92px;
+
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 46px;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+
+    color: #000000;
+}
+
+.date{
+    position: relative;
+    margin-top: 6px;
+    margin-bottom: 14px;
+    
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+
+    color: #999999;
+}
+
+
+
+.container{
+    position: relative;
+    width: calc(max(360px, min(100%, 820px)));
+    left: calc(50% - max(360px, min(100%, 820px))/2);
+    height: 100%;
+    /* font-size:0;to destroy space when child display:inline and parent is display:block */
+}
+
+
+
+#page_title{
+    display: inline;
+    position: relative;
+    margin-left: 33px;
+    top: calc(50% - 37px/2 - 0.5px);
+
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 37px;
+
+    color: #EEFFEF;
+}
+
+.header_link{
+    display: inline;
+    position: relative;
+    float:right;
+    margin-left: 20px;
+    top: calc(50% - 30px/2 - 0.5px);
+
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+
+    text-align: right;
+
+    color: #EEFFEF;
+}
+
+#archive{
+    margin-right:33px;
+}
+
+.movePageContainer{
+    height:56px;
+    padding-bottom: 30px;
+}
+
+.movePage{
+    display: inline-block;
+    position: relative;
+    padding: 16px 0;
+
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: #4D4D4D;
+}
+
+.movePageLeft{padding-left: 70px;}
+
+.movePageRight{padding-right: 70px;float: right;}
+
+.posts{
+    
+    display:flex;
+    flex-wrap: wrap;
+    gap:20px;
+    padding:30px;
+    
+    /*padding-top:200px;*/
+}
+
+.outerPost{
+    width:calc((100% - 20px)/2);
+}
+
+.post{
+    width:100%;
+    /* margin-right:20px; */
+    /* width: 370px; */
+    
+    background:#ffffff;
+
+}
+
+.postImage{
+    display: block;
+    margin-bottom:30px;
+    margin: 0 auto 30px auto; /*top right bottom left*/
+    max-width: min(100%, 680px);
+    min-width: 220px;
+    max-height: 680px;
+    min-width: 220px;
+    width:auto;
+    height: auto;
+    /* aspect-ratio: 16/9; */
+    object-fit: cover;
+}
+
+.body{
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 170% */
+
+    letter-spacing: 0.05em;
+
+    color: #666666;
+}
+
+.border{
+    border-bottom: 4px solid;
+    border-color:#D9D9D9;
+    margin: 0 30px;
+}
+
+.thumbnail{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.discription{
+    width: 100%;
+    overflow:hidden;/*to use child margin as parent size*/
+    word-break:break-all;
+}
+
+.discription>h2{
+    position: relative;
+    min-width: 0px;
+    margin:14px 20px;
+    height:46px;
+
+
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+
+    color: #000000;
+}
+
+.discription>p{
+    position: relative;
+    min-width: 0px;
+    margin:14px 20px;
+    margin-top: 0px;
+    height:57px;
+
+
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    
+    color: #4D4D4D;
+}
+
+#MonthlyArchive{
+    margin: 40px 30px;
+}
+
+#MonthlyArchive>h2{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.years{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top:16px;
+    margin-left:20px;
+    gap:8px;
+}
+
+.months{
+    margin-top: 2px;
+    margin-left:30px;
+}
+
+.year{/*reset button*/
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+}
+
+.year,.month{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #4D4D4D;
+}
+
+.year:hover,.month:hover{
+    color: #5CA1E5;
+}
+
+.months{
+    display:none;
+}
+
+.show {display:block;}
+
+i{
+    pointer-events: none;
+
+}
+
+a,a:hover,a:visited{
+    color: inherit;
+}
+
+footer{
+height: 80px;
+left: 0px;
+right: 0px;
+bottom: 0px;
+
+background: #EEEAE6;
+}
+
+#footer_title{
+    position: relative;
+    left: 33px;
+    top: calc(50% - 37px/2 - 0.5px);
+    display: inline-block;
+
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 37px;
+
+    color: #B3B3B3;
+}
+
+footer>.container>a>p{
+    display: inline;
+    position: relative;
+    float:right;
+
+    width: 117px;
+    height: 30px;
+    right: 33px;
+    top: calc(50% - 30px/2);
+
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    
+    text-align: right;
+    
+    color: #807F7F;
+}
+
+#statusMessage{
+    padding-left: 30px;
+    padding-top: 30px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+}
